@@ -1,4 +1,6 @@
-/* CHEAP 2DIGIT OLED G-FORCE COUNTER FOR A SOZIAL MANUFACTORY BY 25mmHg
+/* 
+* CHEAP 2DIGIT OLED G-FORCE COUNTER FOR A SOZIAL MANUFACTORY BY 25mmHg
+* Version: 1.00
 *  
 * for ATtiny85 with 8MHz via David A. Mellis attiny board package
 * https://github.com/damellis/attiny
@@ -182,13 +184,13 @@ bool armIsNotMoved()
   int16_t temp = readSensor();
   while ((temp >= MAX_TH) || ((counter > 0) &&  (counter < MAXCOUNTER )))
   {
-    temp = readSensor();
     counter--;
     if (temp < MIN_TH)
     {
       isNotMoved = false;
       break;
     }
+	temp = readSensor();
   }
   return (isNotMoved);
 }
