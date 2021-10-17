@@ -16,3 +16,5 @@ The counter value is displayed on an OLED-display.
 **VCC:** 3.3V
 **MCU:** Microchip ATtiny 85 at 8MHz (intern RC-oscillator)
 **IDE:** Arduino IDE 1.8.51 with attiny package  via https://github.com/damellis/attiny
+**Programmer** mySmartUSB light as STK500 Dev.board at **VCC=3V**
+
