@@ -6,7 +6,7 @@ In Our factury We cut small teflon tubes with a tool like a drill stand with a m
 Because the G-force sensor MMA7361 is an analogue one, I can process the output values of the X-axis sensor by an analogue Lowpass-filter. After passing the 10 bit ADC of the ATtiny 85 I use a digital FIR Highpass-filter with 31 taps for further signal processing. The result is a hybrid BP-filter with a sharp PASS-band of about 0.5 to 8Hz. That's fine for Our needs and rejects the most of the analogue noise and vibrations and otherwise position issues. 
 If the sensor is about 20° moving and back within 4 seconds, the filtervalues passes a higher and a lower Threshold in a time window and then the counter increments. The counter value is displayed on an OLED-display. 
 ### Hardware and software
-**Sensor:** DFRROBOT MMA7361 x-channel via analog signal
+**Sensor:** DFRROBOT MMA7361 X-channel via analog signal
 **Circuit:** look at the .ino
 **Filter:** 3Hz analog 4th order LPF and 0,5Hz FIR HPF with 31 taps and 16Hz sample rate
 **Display:** AZ-Delivery 0,66 64x48 pixel monocolor Oled with SSD1306 controller via I2C
