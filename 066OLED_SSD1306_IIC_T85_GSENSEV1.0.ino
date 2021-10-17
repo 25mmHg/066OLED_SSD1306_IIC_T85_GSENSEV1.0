@@ -1,37 +1,39 @@
-/* OLED G-FORCE COUNTER FOR SOZIAL ENTERPRICE
-*
-*                
-*                3V3                   LPF 3Hz
-*                 |
-*                 |
-*             .---o---.    47k     47k     47k     47k
-*             |       |    ___     ___     ___     ___
-*             |MMA7361|o--|___|-o-|___|-o-|___|-o-|___|-o------.
-*             |       |         |       |       |       |      |
-*             '---o---'        ---     ---     ---     ---     |
-*                 |            ---     ---     ---     ---     |
-*                 |             | 220n  | 220n  | 220n  | 220n |
-*                 |             |       |       |       |      |
-*                ===           ===     ===     ===     ===     |
-*                GND           GND     GND     GND     GND     |
-*                                                              |
-*                                                              |
-*                                                              |
-*                3V3                               3V3         |
-*                 |                                 |          |
-*                 |    .---------.         .--------o---.      |
-*                 |  -o|.-------.|o-       |   __   |   |      |
-*                 |  -o||       ||o-  SCL  '-o|° |o-'   |      |  Piezo
-*                 |  -o||       ||o----------o|  |o-----)------'
-*                 |  -o||       ||o----------o|  |o-    |  ___    .---|
-*                 |  -o|'-------'|o-  SDA  .-o|__|o-----)-|___|---|   |
-*                 |  -o|         |o-       |            |      .--|   |
-*                 |  -o|OLED64x48|o--.     | ATTINY    --- 1k  |  '---|
-*                 '---o|         |o- |     |   85      ---     |
-*                      '---------'   |     |       220n |      |
-*                                    |     |            |      |
-*                                   ===   ===          ===    ===
-*                                   GND   GND          GND    GND
+/* OLED G-FORCE COUNTER FOR SOZIAL ENTERPRICE BY 25mmHg
+*  
+* for ATtiny85 with 8MHz via David A. Mellis attiny board package
+* https://github.com/damellis/attiny
+*               
+*           3V3                   LPF 3Hz
+*            |
+*            |
+*        .---o---.    47k     47k     47k     47k
+*        |       |    ___     ___     ___     ___
+*        |MMA7361|o--|___|-o-|___|-o-|___|-o-|___|-o------.
+*        |       |         |       |       |       |      |
+*        '---o---'        ---     ---     ---     ---     |
+*            |            ---     ---     ---     ---     |
+*            |             | 220n  | 220n  | 220n  | 220n |
+*            |             |       |       |       |      |
+*           ===           ===     ===     ===     ===     |
+*           GND           GND     GND     GND     GND     |
+*                                                         |
+*                                                         |
+*                                                         |
+*           3V3                               3V3         |
+*            |                                 |          |
+*            |    .---------.         .--------o---.      |
+*            |  -o|.-------.|o-       |   __   |   |      |
+*            |  -o||       ||o-  SCL  '-o|° |o-'   |      |  Piezo
+*            |  -o||       ||o----------o|  |o-----)------'
+*            |  -o||       ||o----------o|  |o-    |  ___    .---|
+*            |  -o|'-------'|o-  SDA  .-o|__|o-----)-|___|---|   |
+*            |  -o|         |o-       |            |      .--|   |
+*            |  -o|OLED64x48|o--.     | ATTINY    --- 1k  |  '---|
+*            '---o|         |o- |     |   85      ---     |
+*                 '---------'   |     |       220n |      |
+*                               |     |            |      |
+*                              ===   ===          ===    ===
+*                              GND   GND          GND    GND
 *
 *
 *(created with AACircuit v1.28.7 beta 10/23/16 www.tech-chat.de)
@@ -47,8 +49,8 @@ const int16_t MAX_TH = 25;
 const int16_t MIN_TH = -20;
 const uint8_t MAXCOUNTER = 64;
 
-/* OLED Constructor u8x8 Display lib */
-U8X8_SSD1306_64X48_ER_SW_I2C u8x8(/* clock=*/ 3, /* data=*/ 4, /* reset=*/ U8X8_PIN_NONE);// ATTiny85
+/* Constructor of U8x8 Display lib for ATtiny85 soft I2C and 64x48 OLED*/
+U8X8_SSD1306_64X48_ER_SW_I2C u8x8(/*clock=*/3,/*data=*/4,/*reset=*/U8X8_PIN_NONE);
 
 /* short Beep */
 void beep()
