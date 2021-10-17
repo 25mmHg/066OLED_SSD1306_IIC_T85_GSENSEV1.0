@@ -1,4 +1,4 @@
-/* OLED G-FORCE COUNTER FOR 
+/* OLED G-FORCE COUNTER FOR SOZIAL ENTERPRICE
 *
 *                
 *                3V3                   LPF 3Hz

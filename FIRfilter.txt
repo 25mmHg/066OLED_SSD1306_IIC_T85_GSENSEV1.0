@@ -1,0 +1,38 @@
+{
+  "_comment1": "for use with Webtool: https://wirelesslibrary.labs.b-com.com/FIRfilterdesigner rename it to .json"
+  "weight_type": "ratio",
+  "general_parameters": {
+    "value_type": "dB",
+    "freq_unit": "Hz",
+    "sampling_freq": 16,
+    "symmetry": true,
+    "optimal_length": false,
+    "n_bits_quantize": 16,
+    "number_taps": 31,
+    "max_number_taps": 10000,
+    "oversampling_rate": 16,
+    "over_constraint": false
+  },
+  "block": [
+    {
+      "type": "band_stop",
+      "frequency": [
+        0,
+        0.1
+      ],
+      "rejection": -60
+    },
+    {
+      "type": "band_pass",
+      "frequency": [
+        0.5,
+        8
+      ],
+      "magnitude": [
+        1,
+        1
+      ],
+      "ripple": 0.2
+    }
+  ]
+}
