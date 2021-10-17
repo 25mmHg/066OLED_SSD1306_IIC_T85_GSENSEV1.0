@@ -190,7 +190,7 @@ bool armIsNotMoved()
       isNotMoved = false;
       break;
     }
-	temp = readSensor();
+    temp = readSensor();
   }
   return (isNotMoved);
 }
