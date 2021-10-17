@@ -1,4 +1,4 @@
-/* OLED G-FORCE COUNTER FOR SOZIAL ENTERPRICE BY 25mmHg
+/* CHEAP 2DIGIT OLED G-FORCE COUNTER FOR A SOZIAL MANUFACTORY BY 25mmHg
 *  
 * for ATtiny85 with 8MHz via David A. Mellis attiny board package
 * https://github.com/damellis/attiny
@@ -23,8 +23,8 @@
 *            |                                 |          |
 *            |    .---------.         .--------o---.      |
 *            |  -o|.-------.|o-       |   __   |   |      |
-*            |  -o||       ||o-  SCL  '-o|° |o-'   |      |  Piezo
-*            |  -o||       ||o----------o|  |o-----)------'
+*            |  -o|| HELLO ||o-  SCL  '-o|° |o-'   |      |  Piezo
+*            |  -o|| AGAIN ||o----------o|  |o-----)------'
 *            |  -o||       ||o----------o|  |o-    |  ___    .---|
 *            |  -o|'-------'|o-  SDA  .-o|__|o-----)-|___|---|   |
 *            |  -o|         |o-       |            |      .--|   |
