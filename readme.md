@@ -9,12 +9,10 @@ That's fine for Our needs and reject some analogue noise and vibrations and also
 If the sensor is about 20° moving and back within 2 seconds, the filtervalues passes an higher and an lower Threshold in a time window and then the counter increments.
 The counter value is displayed on an OLED-display. 
 ### Hardware and software
-Sensor: DFRROBOT MMA7361 x-channel via analog signal
-Circuit: look at the .ino
-Filter: 3Hz analog 4th order LPF and 0,5Hz FIR HPF with 31 taps
-Display: AZ-Delivery 0,66 Oled via I2C
-VCC: 3.3V
-MCU: Microchip ATtiny 85 at 8MHz (intern RC-oscillator)
-IDE: Arduino IDE 1.8.51 with attiny package  via https://github.com/damellis/attiny
-
-
+**Sensor:** DFRROBOT MMA7361 x-channel via analog signal
+**Circuit:** look at the .ino
+**Filter:** 3Hz analog 4th order LPF and 0,5Hz FIR HPF with 31 taps
+**Display:** AZ-Delivery 0,66 Oled via I2C
+**VCC:** 3.3V
+**MCU:** Microchip ATtiny 85 at 8MHz (intern RC-oscillator)
+**IDE:** Arduino IDE 1.8.51 with attiny package  via https://github.com/damellis/attiny
