@@ -1,4 +1,4 @@
-# Howto OLED G-force counter for sozial enterprices
+# Howto 2digit OLED G-force counter for tools in sozial enterprices
 ### Why
 There are many jobs in a manufacture with the needing of counting objects after prozess steps.
 In our fab we cut small tubes with a tool like a drill stand and put them in a small plastic bag.
@@ -17,4 +17,3 @@ The counter value is displayed on an OLED-display.
 **MCU:** Microchip ATtiny 85 at 8MHz (intern RC-oscillator)
 **IDE:** Arduino IDE 1.8.51 with attiny package  via https://github.com/damellis/attiny
 **Programmer** mySmartUSB light as STK500 Dev.board at **VCC=3V**
-
