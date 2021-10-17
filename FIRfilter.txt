@@ -1,5 +1,5 @@
 {
-  "_comment1": "for use with Webtool: https://wirelesslibrary.labs.b-com.com/FIRfilterdesigner rename it to .json"
+  "_comment1": "for use with Webtool: https://wirelesslibrary.labs.b-com.com/FIRfilterdesigner/ rename it to .json"
   "weight_type": "ratio",
   "general_parameters": {
     "value_type": "dB",
